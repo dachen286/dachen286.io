@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>猜數字小遊戲</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- 引入我們自己寫的 CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body style="background-color: #acf8ff;">
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>猜數字</h1>
+        </div>
+
+        <div class="form-group row">
+
+            <div class="col-10">
+                <li>遊戲說明</li>
+                <p id="rule">請輸入一個3位數字如:123，點選回答後會顯示"答案在"以上或以下，直至猜到時即為勝利，按下"產生題目"鈕可產生新題目</p>
+            </div>
+        </div>
+
+        <button type="quest" class="ans" style="
+    background-color: #eaff8e;
+    color: black;
+    box-shadow: 6px 5px 5px 0px #21581a;
+">產生題目</button>
+        <div class="form-group row">
+            <label for="example-number-input" class="col-2 col-form-label">請輸入猜測數字(3位數)</label>
+            <div class="col-10">
+                <input class="form-control" type="number" value="0" id="ua">
+            </div>
+        </div>
+
+
+        <button type="button" class="ans" style="
+    background-color: #eaff8e;
+    color: black;
+    box-shadow: 6px 5px 5px 0px #21581a;">回答</button>
+
+
+    </div>
+    <div class="col-10" id="anser">
+        <label for="example-number-input" class="col-5 col-form-label"></label>
+        <button type="button" class="ans"><img src="./image/up.png" alt=""></button>
+        <button type="button" class="ans"><img src="./image/down.png" alt=""></button>
+        <button type="button" class="ans"><img src="./image/ans.png" alt=""></button>
+
+
+
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- 引入我們自己寫的 JavaScript -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
